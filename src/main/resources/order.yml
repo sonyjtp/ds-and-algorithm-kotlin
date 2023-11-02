@@ -1,9 +1,14 @@
 tree:
   - algoexpert:
+    - BranchSums
     - FindClosestValueInBST
   - leetcode:
-    - BinaryTreeSearch
-    - MaximumDepth
-    - PathSum
-    - CountGoodNodes
-    - SameTree
+      - depth-first-search:
+        - BinaryTreeSearch
+        - MaximumDepth
+        - PathSum
+        - CountGoodNodes
+        - SameTree
+        - LowestCommonAncestor
+        - MinimumDepth
+        - MaxAncestorDiff
