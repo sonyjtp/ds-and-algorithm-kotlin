@@ -12,3 +12,4 @@ tree:
         - LowestCommonAncestor
         - MinimumDepth
         - MaxAncestorDiff
+        - DiameterOfBinaryTree
