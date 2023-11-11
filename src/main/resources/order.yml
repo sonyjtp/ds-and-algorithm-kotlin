@@ -14,3 +14,6 @@ tree:
         - MaxAncestorDiff
         - DiameterOfBinaryTree
         - DeepestLeavesSum
+        - RangeSumBST
+      - breadth-first-search:
+        - ZigZagLevelOrderTraversal
