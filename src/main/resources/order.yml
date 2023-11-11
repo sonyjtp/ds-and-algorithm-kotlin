@@ -13,3 +13,4 @@ tree:
         - MinimumDepth
         - MaxAncestorDiff
         - DiameterOfBinaryTree
+        - DeepestLeavesSum
