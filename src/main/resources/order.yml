@@ -3,21 +3,24 @@ tree:
     - BranchSums
     - FindClosestValueInBST
   - leetcode:
-      - depth-first-search:
-        - BinaryTreeSearch
-        - MaximumDepth
-        - PathSum
-        - CountGoodNodes
-        - SameTree
-        - LowestCommonAncestor
-        - MinimumDepth
-        - MaxAncestorDiff
-        - DiameterOfBinaryTree
-        - DeepestLeavesSum
-        - binary-search-tree:
+      tree:
+        depth-first-search:
+          - BinaryTreeSearch
+          - MaximumDepth
+          - PathSum
+          - CountGoodNodes
+          - SameTree
+          - LowestCommonAncestor
+          - MinimumDepth
+          - MaxAncestorDiff
+          - DiameterOfBinaryTree
+          - DeepestLeavesSum
+        binary-search-tree:
           - RangeSumBST
           - MinimumAbsoluteDifference
           - InsertIntoBST
           - ClosestValue
-      - breadth-first-search:
-        - ZigZagLevelOrderTraversal
+        breadth-first-search:
+          - ZigZagLevelOrderTraversal
+      graph:
+
