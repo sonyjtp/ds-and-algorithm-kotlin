@@ -4,6 +4,7 @@ package algoexpert.array
 fun main() {
     val competitions = listOf(
         listOf("HTML", "Java"),
+
         listOf("Java", "Python"),
         listOf("Python", "HTML"),
         listOf("C#", "Python"),

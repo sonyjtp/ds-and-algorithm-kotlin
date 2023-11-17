@@ -1,5 +1,5 @@
 //https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
-package leetcode.tree
+package leetcode.tree.dfs
 
 import leetcode.tree.pojo.TreeNode
 

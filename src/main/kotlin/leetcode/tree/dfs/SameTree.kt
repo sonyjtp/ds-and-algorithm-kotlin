@@ -1,5 +1,5 @@
 //https://leetcode.com/problems/same-tree/description/
-package leetcode.tree
+package leetcode.tree.dfs
 
 import leetcode.tree.pojo.TreeNode
 import java.util.*

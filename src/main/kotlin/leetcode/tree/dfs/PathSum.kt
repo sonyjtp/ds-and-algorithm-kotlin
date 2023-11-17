@@ -1,6 +1,6 @@
 //https://leetcode.com/problems/path-sum/
 
-package leetcode.tree
+package leetcode.tree.dfs
 
 import leetcode.tree.pojo.TreeNode
 import java.util.Stack

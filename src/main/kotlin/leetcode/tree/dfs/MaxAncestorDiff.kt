@@ -1,5 +1,5 @@
 // https://tinyurl.com/leetcode020
-package leetcode.tree
+package leetcode.tree.dfs
 
 import leetcode.tree.pojo.TreeNode
 import kotlin.math.abs

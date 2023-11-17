@@ -1,5 +1,5 @@
 //https://leetcode.com/problems/count-good-nodes-in-binary-tree/
-package leetcode.tree
+package leetcode.tree.dfs
 
 import leetcode.tree.pojo.TreeNode
 import java.util.Stack

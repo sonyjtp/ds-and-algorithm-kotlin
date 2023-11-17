@@ -1,5 +1,5 @@
 //https://tinyurl.com/leetcode024
-package leetcode.tree.bst
+package leetcode.tree.dfs.bst
 
 import leetcode.tree.pojo.TreeNode
 

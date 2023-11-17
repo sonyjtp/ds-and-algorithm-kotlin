@@ -1,7 +1,7 @@
 //https://tinyurl.com/leetcode022
 // Given the root of a binary tree, return the sum of values of its deepest leaves.
 
-package leetcode.tree
+package leetcode.tree.dfs
 
 import leetcode.tree.pojo.TreeNode
 

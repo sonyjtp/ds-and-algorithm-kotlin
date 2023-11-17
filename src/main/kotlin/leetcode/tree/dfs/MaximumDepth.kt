@@ -1,5 +1,5 @@
 //https://leetcode.com/problems/maximum-depth-of-binary-tree/
-package leetcode.tree
+package leetcode.tree.dfs
 
 import leetcode.tree.pojo.TreeNode
 import java.util.Stack
@@ -7,7 +7,7 @@ import kotlin.math.max
 
 // using post-order traversal and recursion
 fun <T> maxDepth(root: TreeNode<T>?): Int {
-        return if (root == null) 0 else  maxOf(maxDepth(root.left), maxDepth(root.right)) + 1
+        return if (root == null) 0 else  max(maxDepth(root.left), maxDepth(root.right)) + 1
 }
 
 

@@ -8,7 +8,7 @@ fun main() {
 }
 
 fun twoNumberSum(array: MutableList<Int>, targetSum: Int): List<Int> {
-    var seen = mutableListOf<Int>()
+    val seen = mutableListOf<Int>()
     for(i in array.indices){
         if (targetSum - array[i] in seen) return  listOf(array[i], targetSum - array[i])
         seen.add(array[i])

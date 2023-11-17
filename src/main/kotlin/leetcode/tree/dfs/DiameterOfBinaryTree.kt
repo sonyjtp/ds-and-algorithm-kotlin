@@ -1,6 +1,6 @@
 // https://tinyurl.com/leetcode021
 // find the longest left branch and the longest right branch of a node
-package leetcode.tree
+package leetcode.tree.dfs
 
 import leetcode.tree.pojo.TreeNode
 import kotlin.math.max
