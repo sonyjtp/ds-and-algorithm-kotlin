@@ -3,8 +3,11 @@ tree:
     - BranchSums
     - FindClosestValueInBST
   - leetcode:
+      queue:
+        - Queue
+        - CircularQueue
       tree:
-        depth-first-search:
+        dfs:
           - BinaryTreeSearch
           - MaximumDepth
           - PathSum
@@ -15,12 +18,14 @@ tree:
           - MaxAncestorDiff
           - DiameterOfBinaryTree
           - DeepestLeavesSum
-        binary-search-tree:
-          - RangeSumBST
-          - MinimumAbsoluteDifference
-          - InsertIntoBST
-          - ClosestValue
-        breadth-first-search:
+        bfs:
           - ZigZagLevelOrderTraversal
+        binary-search-tree:
+          dfs:
+            - RangeSumBST
+            - MinimumAbsoluteDifference
+            - InsertIntoBST
+            - ClosestValue
       graph:
+        - BuildGraph
 
