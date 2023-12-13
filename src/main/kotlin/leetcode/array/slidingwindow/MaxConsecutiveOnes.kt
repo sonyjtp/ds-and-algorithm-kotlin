@@ -1,5 +1,5 @@
 //https://tinyurl.com/leetcode036
-package leetcode.array
+package leetcode.array.slidingwindow
 
 import kotlin.math.max
 

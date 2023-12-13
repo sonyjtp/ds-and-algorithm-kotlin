@@ -4,11 +4,14 @@ package leetcode.array
 import kotlin.math.max
 
 fun main() {
-    val nums = (-10..20).shuffled().take(8).toIntArray()
-    val k = (3..5).random()
+//    val nums = (-10..20).shuffled().take(8).toIntArray()
+    val nums = listOf(0,1,1,3,3).toIntArray()
+//    val k = (3..5).random()
+    val k = 4
     println(nums.joinToString(","))
     println(k)
     println(findMaxAverage(nums, k))
+    println(findMaxAverage2(nums, k))
 }
 
 fun findMaxAverage(nums: IntArray, k: Int): Double {
@@ -28,4 +31,17 @@ fun findMaxAverage(nums: IntArray, k: Int): Double {
     return maxAvg
 }
 
+
+fun findMaxAverage2(nums: IntArray, k: Int): Double {
+    var sum = 0.0
+    for(i in 0 until  k) {
+        sum += nums[i]
+    }
+    var maxSum = sum
+    for ((left, i) in (k until  nums.size).withIndex()){
+        sum += nums[i] - nums[left]
+        maxSum = max(maxSum, sum)
+    }
+    return maxSum / k
+}
 

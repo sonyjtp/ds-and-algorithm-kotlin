@@ -1,6 +1,6 @@
 //https://tinyurl.com/leetcode032
 //sliding window
-package leetcode.array
+package leetcode.array.slidingwindow
 
 fun main() {
 
@@ -25,3 +25,4 @@ fun numSubarrayProductLessThanK(nums: IntArray, k: Int): Int {
     }
     return result
 }
+
