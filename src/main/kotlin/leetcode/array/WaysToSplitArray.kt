@@ -9,7 +9,7 @@ fun main() {
     println(waysToSplitArray(nums.toIntArray()))
 }
 
-fun waysToSplitArray(nums: IntArray): Int {
+fun waysToSplitArray2(nums: IntArray): Int {
     var validSplits = 0
     var sumLeft: Long = 0
     var sumRight: Long = 0
@@ -22,5 +22,19 @@ fun waysToSplitArray(nums: IntArray): Int {
         println("sumLeft: $sumLeft, sumRight:: $sumRight")
         if(sumLeft >= sumRight) validSplits++
     }
+    return validSplits
+}
+
+fun waysToSplitArray(nums: IntArray): Int {
+    var validSplits = 0
+    var leftSum = 0
+    var rightSum = 0
+    for(num in nums) rightSum += num
+    for(i in 1 until nums.size - 1){
+        leftSum += nums[i]
+        rightSum -= nums[i]
+        if (leftSum >= rightSum) validSplits ++
+    }
+
     return validSplits
 }

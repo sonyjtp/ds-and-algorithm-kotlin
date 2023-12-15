@@ -5,43 +5,28 @@ import kotlin.math.min
 
 
 fun main() {
-//    val nums = (1..15).toList().shuffled().take(8)
-    val nums = listOf(6, 7, 13, 4, 8, 1, 15, 14)
-    val target = 10
-//    val target = (10..25).random()
+    val nums = (1..15).toList().shuffled().take(8)
+//    val nums = listOf(2,3,1,2,4,3)
+//    val target = 7
+    val target = (10..25).random()
     println(nums)
     println(target)
-    minSubArrayLen(target, nums.toIntArray())
+    println(minSubArrayLen(target, nums.toIntArray()))
 }
 
 fun minSubArrayLen(target: Int, nums: IntArray): Int {
-    if(nums.sum() < target) return 0
-    var minSubArrayLen = nums.size
-    var (left, right) = Pair(0,0)
-    var sum =0
-    while (right in nums.indices){
-        sum += nums[right]
-        if(sum >= target){
+    var (left, sum) = Pair(0,0)
+    var minSubArrayLen = nums.size + 1
+    for(right in nums.indices){
+        sum+= nums[right]
+        if (sum >= target) {
             minSubArrayLen = min(minSubArrayLen, right - left + 1)
-        } else {
-            while (sum < target && right < nums.size) {
-                right++
-                sum += nums[right]
-            }
-            if(sum >=target && right < nums.size) {
+            while (sum >= target && left <= right) {
                 minSubArrayLen = min(minSubArrayLen, right - left + 1)
+                sum -= nums[left]
+                left++
             }
         }
-        while (sum >= target && left < right) {
-            left++
-            sum -= left
-        }
-        minSubArrayLen = min(minSubArrayLen, right - left + 1)
-
     }
-
-    return minSubArrayLen
+    return if(minSubArrayLen > nums.size) 0 else minSubArrayLen
 }
-
-
-

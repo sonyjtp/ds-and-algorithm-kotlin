@@ -3,6 +3,21 @@ tree:
     - BranchSums
     - FindClosestValueInBST
   - leetcode:
+      array:
+        map:
+          - TwoSum
+          - RepeatedCharacter
+          - Pangram
+        prefixsum:
+          - MaximumAverageSubArray
+          - RunningSum
+          - MinStartValue
+          - MaxVowels
+          - MissingNumber
+        slidingwindow:
+          - SubArrayProductLessThanTarget
+          - MaxConsecutiveOnes
+          - MinSubArrayLen
       queue:
         - Queue
         - CircularQueue

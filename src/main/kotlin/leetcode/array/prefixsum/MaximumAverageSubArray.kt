@@ -1,13 +1,11 @@
 //https://tinyurl.com/leetcode033
-package leetcode.array
+package leetcode.array.prefixsum
 
 import kotlin.math.max
 
 fun main() {
-//    val nums = (-10..20).shuffled().take(8).toIntArray()
-    val nums = listOf(0,1,1,3,3).toIntArray()
-//    val k = (3..5).random()
-    val k = 4
+    val nums = (-10..20).shuffled().take(8).toIntArray()
+    val k = (3..5).random()
     println(nums.joinToString(","))
     println(k)
     println(findMaxAverage(nums, k))

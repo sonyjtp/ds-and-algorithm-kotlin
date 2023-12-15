@@ -1,5 +1,5 @@
 //https://tinyurl.com/leetcode034
-package leetcode.array
+package leetcode.array.map
 
 fun main() {
 //    val nums = (-5..10).shuffled().take(8).toIntArray()
