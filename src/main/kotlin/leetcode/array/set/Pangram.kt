@@ -1,5 +1,5 @@
 //http://tinyurl.com/leetcode043
-package leetcode.array.map
+package leetcode.array.set
 
 
 fun main() {
@@ -8,10 +8,10 @@ fun main() {
 }
 
 fun checkIfPangram(sentence: String): Boolean {
-    val charMap = mutableMapOf<Char, Boolean>()
+    val charSet = mutableSetOf<Char>()
     for(c in sentence) {
-        charMap[c] = true
-        if(charMap.size == 26) return true
+        charSet.add(c)
+        if(charSet.size == 26) return true
     }
     return false
 }

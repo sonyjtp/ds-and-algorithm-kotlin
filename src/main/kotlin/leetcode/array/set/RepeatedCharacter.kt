@@ -1,5 +1,5 @@
 // http://tinyurl.com/leetcode042
-package leetcode.array.map
+package leetcode.array.set
 
 fun main() {
     val charRange = ('a'..'z')
@@ -16,9 +16,7 @@ fun main() {
 
 
 fun repeatedCharacter(s: String): Char {
-    val charMap = mutableMapOf<Char, Boolean>()
-    for(char in s){
-        if (charMap[char] == true) return char else charMap[char] = true
-    }
+    val charSet = mutableSetOf<Char>()
+    for(char in s){ if (char in charSet) return char else charSet.add(char) }
     return ' '
 }
