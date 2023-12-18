@@ -17,6 +17,7 @@ tree:
           - LargestUniqueNumber
           - MaxNumberOfBalloons
           - JewelsAndStones
+          - ContiguousArray
         prefixsum:
           - MaximumAverageSubArray
           - RunningSum
@@ -29,12 +30,14 @@ tree:
           - MaxConsecutiveOnes
           - MinSubArrayLen
           - LongestSubstringWithoutRepetition
-          - ContiguousArray
         multidimensional:
           - IntersectionOfMultipleArrays
           - FindWinners
       linkedlist:
-        - Cycle
+        fastandslowpointers:
+          - Cycle
+          - MiddleNodeValue
+          - ReverseLinkedList
       queue:
         - Queue
         - CircularQueue
