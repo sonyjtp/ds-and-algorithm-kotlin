@@ -29,6 +29,7 @@ tree:
           - MaxConsecutiveOnes
           - MinSubArrayLen
           - LongestSubstringWithoutRepetition
+          - ContiguousArray
         multidimensional:
           - IntersectionOfMultipleArrays
           - FindWinners
