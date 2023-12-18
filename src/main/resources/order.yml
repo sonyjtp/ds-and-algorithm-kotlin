@@ -4,22 +4,36 @@ tree:
     - FindClosestValueInBST
   - leetcode:
       array:
+        generic:
+          - ReverseString
+          - RansomNote
         set:
           - RepeatedCharacter
           - Pangram
           - CountElements
         map:
           - TwoSum
+          - AreOccurrencesEqual
+          - LargestUniqueNumber
+          - MaxNumberOfBalloons
+          - JewelsAndStones
         prefixsum:
           - MaximumAverageSubArray
           - RunningSum
           - MinStartValue
           - MaxVowels
           - MissingNumber
+          - KRadiusSubarrayAverage
         slidingwindow:
           - SubArrayProductLessThanTarget
           - MaxConsecutiveOnes
           - MinSubArrayLen
+          - LongestSubstringWithoutRepetition
+        multidimensional:
+          - IntersectionOfMultipleArrays
+          - FindWinners
+      linkedlist:
+        - Cycle
       queue:
         - Queue
         - CircularQueue
