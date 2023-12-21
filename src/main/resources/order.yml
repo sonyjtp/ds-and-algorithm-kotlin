@@ -37,7 +37,9 @@ tree:
         fastandslowpointers:
           - Cycle
           - MiddleNodeValue
+        generic:
           - ReverseLinkedList
+          - ReverseLinkedList2
       queue:
         - Queue
         - CircularQueue

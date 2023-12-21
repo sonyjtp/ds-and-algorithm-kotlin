@@ -7,10 +7,16 @@ package leetcode.linkedlist
 * }
 */
 
+fun main() {
+    val head = LinkedListUtil.buildLinkedList(1,2,3,4,5)
+    LinkedListUtil.printElements(head)
+    LinkedListUtil.printElements(reverseList(head))
+}
+
 fun reverseList(head: ListNode?): ListNode? {
     var curr = head
     var prev: ListNode? = null
-    while (curr != null) {
+    while (curr!=null) {
         val next = curr.next
         curr.next = prev
         prev = curr
