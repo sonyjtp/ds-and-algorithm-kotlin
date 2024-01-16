@@ -37,12 +37,17 @@ tree:
         fastandslowpointers:
           - Cycle
           - MiddleNodeValue
+          - RemoveNthNodeFromEnd
         generic:
           - ReverseLinkedList
           - ReverseLinkedList2
       queue:
         - Queue
         - CircularQueue
+      stack:
+        - ValidParantheses
+        - RemoveAdjacentDuplicates
+        - BackspaceStringCompare
       tree:
         dfs:
           - BinaryTreeSearch

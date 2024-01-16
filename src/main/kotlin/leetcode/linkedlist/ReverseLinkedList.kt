@@ -16,7 +16,7 @@ fun main() {
 fun reverseList(head: ListNode?): ListNode? {
     var curr = head
     var prev: ListNode? = null
-    while (curr!=null) {
+    while (curr != null) {
         val next = curr.next
         curr.next = prev
         prev = curr
@@ -24,6 +24,7 @@ fun reverseList(head: ListNode?): ListNode? {
     }
     return prev
 }
+
 
 /*
 1 > 2> 3 > 4
