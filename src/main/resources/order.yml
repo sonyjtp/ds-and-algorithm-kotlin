@@ -44,6 +44,7 @@ tree:
       queue:
         - Queue
         - CircularQueue
+        - RecentCounterQueue
       stack:
         - ValidParantheses
         - RemoveAdjacentDuplicates

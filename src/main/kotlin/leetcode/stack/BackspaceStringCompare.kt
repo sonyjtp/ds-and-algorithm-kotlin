@@ -15,12 +15,14 @@ fun backspaceCompare(s: String, t: String): Boolean {
     val tStack = Stack<Char>()
     for(i in 0..len) {
         if (i < s.length){
-            if (s[i] == '#' && sStack.isNotEmpty()) sStack.pop()
-            else if (s[i] != '#') sStack.push(s[i])
+            if (s[i] != '#') sStack.push(s[i])
+            else if (sStack.isNotEmpty()) sStack.pop()
+
         }
         if (i < t.length){
-            if (t[i] == '#' && tStack.isNotEmpty()) tStack.pop()
-            else if (t[i] != '#') tStack.push(t[i])
+            if (t[i] != '#') tStack.push(t[i])
+            else if (tStack.isNotEmpty()) tStack.pop()
+
         }
     }
     return sStack.toString() == tStack.toString()
