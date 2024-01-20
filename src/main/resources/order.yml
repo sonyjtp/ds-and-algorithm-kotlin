@@ -42,13 +42,20 @@ tree:
           - ReverseLinkedList
           - ReverseLinkedList2
       queue:
+        generic:
         - Queue
         - CircularQueue
         - RecentCounterQueue
+        - MovingAverage
+        monotonic:
+          - LongestSubArrayAbsoluteDiff
       stack:
-        - ValidParantheses
-        - RemoveAdjacentDuplicates
-        - BackspaceStringCompare
+        generic:
+          - ValidParentheses
+          - RemoveAdjacentDuplicates
+          - BackspaceStringCompare
+        monotonic:
+          - DailyTemperatures
       tree:
         dfs:
           - BinaryTreeSearch
