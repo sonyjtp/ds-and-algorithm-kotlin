@@ -48,7 +48,7 @@ tree:
         - RecentCounterQueue
         - MovingAverage
         monotonic:
-          - LongestSubArrayAbsoluteDiff
+            LongestSubArrayAbsoluteDiff
       stack:
         generic:
           - ValidParentheses
