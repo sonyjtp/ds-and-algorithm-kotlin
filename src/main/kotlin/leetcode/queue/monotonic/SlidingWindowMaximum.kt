@@ -15,7 +15,6 @@ fun main() {
     println(nums)
     println(windowSize)
     println(maxSlidingWindow(nums.toIntArray(), windowSize).toList())
-//    println(maxSlidingWindow(listOf(10, 2, 4, -3, -1, -2, -4, -2, 0).toIntArray(), 7).toList())
 
 
 }
@@ -37,19 +36,3 @@ fun maxSlidingWindow(nums: IntArray, k: Int): IntArray {
     }
     return result
 }
-
-/*
-[1, 7, 2, -5, 2, 1, 5, 3, 7]
-6
-1   7   2   -5      2   1                   7
-    7   2   -5      2   1   5               7
-        2   -5      2   1   5   3           5
-            -5      2   1   5   3   7       7
-maxDeque
-0   1   2   3       4       5      6       7       8
-1   7   7 2 7 2 -5  7 2    7 2 1   7 5     7 5 3   7
-0   0   0   0       0       0      1
-
-result
-7
-* */
