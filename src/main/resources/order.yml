@@ -33,8 +33,8 @@ tree:
         multidimensional:
           - IntersectionOfMultipleArrays
           - FindWinners
-      linkedlist:
-        fastandslowpointers:
+      linked-list:
+        fast-and-slow-pointers:
           - Cycle
           - MiddleNodeValue
           - RemoveNthNodeFromEnd
@@ -54,8 +54,12 @@ tree:
           - ValidParentheses
           - RemoveAdjacentDuplicates
           - BackspaceStringCompare
+          - RemoveStarsFromString
+          - LexicographicallySmallestString
+          - ValidateStackSequences
         monotonic:
           - DailyTemperatures
+          - StockSpanner
       tree:
         dfs:
           - BinaryTreeSearch
