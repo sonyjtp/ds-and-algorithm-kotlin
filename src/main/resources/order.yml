@@ -57,6 +57,7 @@ tree:
           - RemoveStarsFromString
           - LexicographicallySmallestString
           - ValidateStackSequences
+          - AsteroidCollision
         monotonic:
           - DailyTemperatures
           - StockSpanner
