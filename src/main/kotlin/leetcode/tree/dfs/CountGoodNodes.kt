@@ -6,32 +6,21 @@ import java.util.Stack
 import kotlin.math.max
 
 
-private var count = 1
 
-
-// pre-order traversal - better solution since we are not changing node.`val`
-fun goodNodes(root: TreeNode<Int>?, maxSoFar: Int): Int {
-    if (root == null) return 0
-    val left = goodNodes(root.left, max(maxSoFar, root.`val`))
-    val right = goodNodes(root.right, max(maxSoFar, root.`val`))
-    var result = left + right
-    if (root.`val` > maxSoFar) result++
-    return result
+fun goodNodes(root: TreeNode<Int>?): Int {
+    return countAndCheck(root)
 }
 
-//pre-order traversal - another solution
-fun goodNodes2(root:TreeNode<Int>?): Int {
-    if (root == null) return 0
-    root.left?.let {
-        if (it.`val` >= root.`val`) count++ else it.`val` = root.`val`
-        goodNodes2(it)
-    }?:0
-    root.right?.let {
-        if (it.`val` >= root.`val`) count++ else it.`val` = root.`val`
-        goodNodes2(it)
-    }?: 0
-    return count
+fun countAndCheck(root: TreeNode<Int>?, maxSoFar: Int = root?.`val` ?: 0): Int {
+    return root?.let {
+        var result = countAndCheck(root.left, max(it.`val`, maxSoFar)) +
+                countAndCheck(root.right, max(it.`val`, maxSoFar))
+        if (it.`val` >= maxSoFar) result ++
+        result
+    } ?: 0
 }
+
+
 
 
 fun goodNodesIterative(root: TreeNode<Int>?): Int {

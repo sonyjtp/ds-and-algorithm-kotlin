@@ -4,33 +4,41 @@ import leetcode.tree.pojo.TreeNode
 
 object BinaryTreeSearch {
 
-    fun <T> depthFirstSearch(node: TreeNode<T>?) {
-        if(node == null) return
-        depthFirstSearch(node.left)
-        depthFirstSearch(node.right)
+    private fun <T> depthFirstSearch(node: TreeNode<T>?) {
+        node?.let {
+            depthFirstSearch(it.left)
+            depthFirstSearch(it.right)
+        }
+        return
     }
 
     // execute the logic before traversal
-    fun <T>preOrderDfs(node: TreeNode<T>?) {
-        if(node == null) return
-        println(node.`val`)
-        preOrderDfs(node.left)
-        preOrderDfs(node.right)
-
+    private fun <T>preOrderDfs(node: TreeNode<T>?) {
+        node?.let {
+            println(it.`val`)
+            preOrderDfs(it.left)
+            preOrderDfs(it.right)
+        }
+        return
     }
 
-    fun <T> inOrderDfs(node: TreeNode<T>?) {
-        if (node == null) return
-        inOrderDfs(node.left)
-        println(node.`val`)
-        inOrderDfs(node.right)
+    // execute the logic after left and before right
+    private fun <T> inOrderDfs(node: TreeNode<T>?) {
+        node?.let {
+            inOrderDfs(it.left)
+            println(it.`val`)
+            inOrderDfs(it.right)
+        }
+        return
     }
 
-    fun <T> postOrderDfs(node: TreeNode<T>?) {
-        if (node == null) return
-        postOrderDfs(node.left)
-        postOrderDfs(node.right)
-        println(node.`val`)
+    // execute the logic after traversal
+    private fun <T> postOrderDfs(node: TreeNode<T>?) {
+        node?.let {
+            postOrderDfs(it.left)
+            postOrderDfs(it.right)
+            println(it.`val`)
+        }
+        return
     }
-
 }

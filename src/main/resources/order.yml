@@ -6,6 +6,7 @@ tree:
       array:
         generic:
           - ReverseString
+          - SquaresOfASortedArray
           - RansomNote
         set:
           - RepeatedCharacter

@@ -7,7 +7,9 @@ import kotlin.math.max
 
 // using post-order traversal and recursion
 fun <T> maxDepth(root: TreeNode<T>?): Int {
-        return if (root == null) 0 else  max(maxDepth(root.left), maxDepth(root.right)) + 1
+        return root?.let {
+               max(maxDepth(root.left), maxDepth(root.right)) + 1
+        } ?: 0
 }
 
 
